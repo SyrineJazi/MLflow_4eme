@@ -1,0 +1,46 @@
+name: CI/CD Pipeline
+
+# Trigger the pipeline when code is pushed to the main branch
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  # This job will set up Python, install dependencies, run tests, and train your model
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+    
+    # Step 1: Checkout the repository
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    # Step 2: Set up Python
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    # Step 3: Install dependencies
+    - name: Install dependencies
+      run: |
+        python -m venv venv
+        source venv/bin/activate
+        pip install -r requirements.txt
+
+    # Step 4: Train the model 
+    - name: Train the model
+      run: |
+        source venv/bin/activate
+        python main.py --data merged_data.csv --train --save models/model.joblib
+
+    # Step 6: (Optional) Deploy the model or push results somewhere (you can add more steps here)
+    # Example: Deploy the model to a server or log results to a service
+    # - name: Deploy Model
+    #   run: |
+    #     bash deploy.sh
+
