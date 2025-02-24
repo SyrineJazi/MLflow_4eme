@@ -4,7 +4,7 @@ import joblib
 from model_pipeline import prepare_data, train_model, evaluate_model, save_model, load_model
 
 
-def main()
+def main():
     #Testing the pipepline with a comment SECOND TRY
     # Identification des étapes via les arguments
     parser = argparse.ArgumentParser(
