@@ -37,7 +37,14 @@ jobs:
       run: |
         source venv/bin/activate
         python main.py --data merged_data.csv --train --save models/model.joblib
-
+    # Step 5: git
+    - name: Commit and push changes 
+      run: |
+        git config --global user.name "SyrineJazi"
+        git config --global user.email "syrine.jazi@esprit.tn"
+        git add models/model.joblib
+        git commit -m "Automated model update"
+        git push
     # Step 6: (Optional) Deploy the model or push results somewhere (you can add more steps here)
     # Example: Deploy the model to a server or log results to a service
     # - name: Deploy Model
