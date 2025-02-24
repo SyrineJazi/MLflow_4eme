@@ -5,7 +5,8 @@ from model_pipeline import prepare_data, train_model, evaluate_model, save_model
 
 
 def main():
-    #Testing the pipepline with a comment SECOND TRY
+    # Testing GIT third try
+    # Testing the pipepline with a comment SECOND TRY
     # Identification des étapes via les arguments
     parser = argparse.ArgumentParser(
         description="Pipeline de Machine Learning")
