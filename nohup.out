@@ -1,0 +1,607 @@
+[2025-02-23 22:29:50 +0100] [1047] [INFO] Starting gunicorn 23.0.0
+[2025-02-23 22:29:50 +0100] [1047] [INFO] Listening at: http://0.0.0.0:5000 (1047)
+[2025-02-23 22:29:50 +0100] [1047] [INFO] Using worker: sync
+[2025-02-23 22:29:50 +0100] [1048] [INFO] Booting worker with pid: 1048
+[2025-02-23 22:29:50 +0100] [1049] [INFO] Booting worker with pid: 1049
+[2025-02-23 22:30:28 +0100] [1050] [INFO] Booting worker with pid: 1050
+[2025-02-23 22:30:28 +0100] [1051] [INFO] Booting worker with pid: 1051
+[2025-02-23 22:34:27 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:1049)
+[2025-02-23 22:34:27 +0100] [1049] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:34:27 +0100] [1049] [INFO] Worker exiting (pid: 1049)
+[2025-02-23 22:34:28 +0100] [1317] [INFO] Booting worker with pid: 1317
+[2025-02-23 22:35:28 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:1048)
+[2025-02-23 22:35:28 +0100] [1048] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:35:28 +0100] [1048] [INFO] Worker exiting (pid: 1048)
+[2025-02-23 22:35:28 +0100] [1369] [INFO] Booting worker with pid: 1369
+[2025-02-23 22:38:29 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:1369)
+[2025-02-23 22:38:29 +0100] [1369] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:38:29 +0100] [1369] [INFO] Worker exiting (pid: 1369)
+[2025-02-23 22:38:29 +0100] [1455] [INFO] Booting worker with pid: 1455
+[2025-02-23 22:38:27 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:1317)
+[2025-02-23 22:38:27 +0100] [1317] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:38:27 +0100] [1317] [INFO] Worker exiting (pid: 1317)
+[2025-02-23 22:38:28 +0100] [1489] [INFO] Booting worker with pid: 1489
+[2025-02-23 22:39:27 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:1489)
+[2025-02-23 22:39:27 +0100] [1489] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:39:27 +0100] [1489] [INFO] Worker exiting (pid: 1489)
+[2025-02-23 22:39:27 +0100] [1539] [INFO] Booting worker with pid: 1539
+[2025-02-23 22:40:25 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:1539)
+[2025-02-23 22:40:25 +0100] [1539] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:40:25 +0100] [1539] [INFO] Worker exiting (pid: 1539)
+[2025-02-23 22:40:25 +0100] [1589] [INFO] Booting worker with pid: 1589
+[2025-02-23 22:41:28 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:1051)
+[2025-02-23 22:41:28 +0100] [1051] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:41:28 +0100] [1051] [INFO] Worker exiting (pid: 1051)
+[2025-02-23 22:41:28 +0100] [1643] [INFO] Booting worker with pid: 1643
+[2025-02-23 22:43:05 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:1589)
+[2025-02-23 22:43:05 +0100] [1589] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:43:05 +0100] [1589] [INFO] Worker exiting (pid: 1589)
+[2025-02-23 22:42:27 +0100] [1691] [INFO] Booting worker with pid: 1691
+[2025-02-23 22:43:27 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:1691)
+[2025-02-23 22:43:27 +0100] [1691] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:43:27 +0100] [1691] [INFO] Worker exiting (pid: 1691)
+[2025-02-23 22:43:28 +0100] [1737] [INFO] Booting worker with pid: 1737
+[2025-02-23 22:44:27 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:1050)
+[2025-02-23 22:44:27 +0100] [1050] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:44:27 +0100] [1050] [INFO] Worker exiting (pid: 1050)
+[2025-02-23 22:44:27 +0100] [1782] [INFO] Booting worker with pid: 1782
+[2025-02-23 22:49:27 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:1643)
+[2025-02-23 22:49:27 +0100] [1643] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:49:27 +0100] [1643] [INFO] Worker exiting (pid: 1643)
+[2025-02-23 22:49:28 +0100] [2022] [INFO] Booting worker with pid: 2022
+[2025-02-23 22:50:28 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:1737)
+[2025-02-23 22:50:28 +0100] [1737] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:50:28 +0100] [1737] [INFO] Worker exiting (pid: 1737)
+[2025-02-23 22:50:28 +0100] [2076] [INFO] Booting worker with pid: 2076
+[2025-02-23 22:51:27 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:2076)
+[2025-02-23 22:51:27 +0100] [2076] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:51:27 +0100] [2076] [INFO] Worker exiting (pid: 2076)
+[2025-02-23 22:51:27 +0100] [2126] [INFO] Booting worker with pid: 2126
+[2025-02-23 22:52:27 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:2022)
+[2025-02-23 22:52:28 +0100] [2022] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:52:28 +0100] [2022] [INFO] Worker exiting (pid: 2022)
+[2025-02-23 22:52:28 +0100] [2238] [INFO] Booting worker with pid: 2238
+[2025-02-23 22:53:26 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:2238)
+[2025-02-23 22:53:26 +0100] [2238] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:53:26 +0100] [2238] [INFO] Worker exiting (pid: 2238)
+[2025-02-23 22:53:27 +0100] [2316] [INFO] Booting worker with pid: 2316
+[2025-02-23 22:54:28 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:1782)
+[2025-02-23 22:54:28 +0100] [1782] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:54:28 +0100] [1782] [INFO] Worker exiting (pid: 1782)
+[2025-02-23 22:54:28 +0100] [2368] [INFO] Booting worker with pid: 2368
+[2025-02-23 22:55:27 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:1455)
+[2025-02-23 22:55:27 +0100] [1455] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:55:27 +0100] [1455] [INFO] Worker exiting (pid: 1455)
+[2025-02-23 22:55:27 +0100] [2414] [INFO] Booting worker with pid: 2414
+[2025-02-23 22:56:27 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:2414)
+[2025-02-23 22:56:27 +0100] [2414] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:56:27 +0100] [2414] [INFO] Worker exiting (pid: 2414)
+[2025-02-23 22:56:28 +0100] [2491] [INFO] Booting worker with pid: 2491
+[2025-02-23 22:57:28 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:2316)
+[2025-02-23 22:57:28 +0100] [2316] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:57:28 +0100] [2316] [INFO] Worker exiting (pid: 2316)
+[2025-02-23 22:57:28 +0100] [2545] [INFO] Booting worker with pid: 2545
+[2025-02-23 22:58:27 +0100] [1047] [CRITICAL] WORKER TIMEOUT (pid:2126)
+[2025-02-23 22:58:27 +0100] [2126] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+          ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+           ^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+        ^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/syrine/syrine_jazi_4DS9_ml_project/venv/lib/python3.12/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-02-23 22:58:27 +0100] [2126] [INFO] Worker exiting (pid: 2126)
+[2025-02-23 22:58:28 +0100] [2605] [INFO] Booting worker with pid: 2605

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/syrine/syrine_jazi_4DS9_ml_project/atelier5/mlruns/931597044613317946/96e8ef922537420784c5729d5adf4c0f/artifacts
+end_time: 1740387819268
+entry_point_name: ''
+experiment_id: '931597044613317946'
+lifecycle_stage: active
+run_id: 96e8ef922537420784c5729d5adf4c0f
+run_name: useful-gnat-403
+run_uuid: 96e8ef922537420784c5729d5adf4c0f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740387813245
+status: 3
+tags: []
+user_id: syrine
